@@ -22,8 +22,11 @@
     margin:auto;
 }
 
-[data-type=function],[data-type=undefined] {
+[data-type=function],[data-type=undefined],[data-type=object] {
 
 	display:none;
 }
 
+.stats .item {
+	padding-right:2em;	
+}
