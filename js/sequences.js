@@ -12,7 +12,7 @@ var ArabicNumbers = function () {
 
 ArabicNumbers.prototype=new SymSequence();
 
-function LowercaseAlpha(n) {
+function LowercaseAlpha() {
 	this.name = function() {return "alphabet"};
 	this.min = function(soft) { return 1};
 	this.max = function(soft) { return 26};
@@ -21,5 +21,17 @@ function LowercaseAlpha(n) {
 
 LowercaseAlpha.prototype=new SymSequence();
 
-var all = [new ArabicNumbers(), new LowercaseAlpha()];
+function MorseAlpha() {
+	this.name = function() {return "morse alphabet"};
+	var alpha = [0, ".-", "-...","-.-.","-..",".","..-.","--.","....","..",
+		".---","-.-",".-..","--","-.","---",".--.","--.-",".-.",
+		"...","-","..-","...-",".--","-..-","-.--","--.."];
+	this.min = function(soft) { return 1};
+	this.max = function(soft) { return 26};
+	this.loc = function(n) {return (alpha[n])};
+}
+
+LowercaseAlpha.prototype=new SymSequence();
+
+var all = [new ArabicNumbers(), new LowercaseAlpha(), new MorseAlpha()];
 module.exports = {allents:all};
