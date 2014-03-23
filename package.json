@@ -1,0 +1,27 @@
+{
+  "name": "symbolsequence",
+  "version": "0.0.1",
+  "description": "An educational game for remember sequences of symbols",
+  "main": "game.js",
+  "devDependencies": {
+    "grunt": "^0.4.4",
+    "browserify": "^3.33.0",
+    "grunt-browserify": "^2.0.1"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lostnet/symsequence.git"
+  },
+  "keywords": [
+    "game"
+  ],
+  "author": "Will Young",
+  "license": "MIT/X11",
+  "bugs": {
+    "url": "https://github.com/lostnet/symsequence/issues"
+  },
+  "homepage": "https://github.com/lostnet/symsequence"
+}
