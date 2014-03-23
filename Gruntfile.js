@@ -3,7 +3,7 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		browserify: {
 			dist: {
-				files:{'game.js':['js/wanttoplay.js'] }
+				files:{'js/game.js':['js/index.js'] }
 			},
 			options: {}
 		}
